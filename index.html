@@ -2,20 +2,14 @@
 <html>
     <head>
          <meta charset="UTF-8">
-         <title>
-                My website
-         </title>
+         <title>My Website: Traffic Lights</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+         
     </head>
     <body>
           <h1> Hi it's me ;)!!! If you are bored i am gonna put some pictures!!! </h1>
-    </Body>
-<!DOCTYPE html>
-<html>
-    <head>
-        <title>Traffic Lights</title>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    </head>
-    <body>
+    
+
 
         <style type="text/css">
             #traffic_light { 
@@ -31,11 +25,14 @@
 
         <div id="traffic_light"></div>
         <button type="button" onclick="colour_change()">Change Lights</button>
+        
 
         <script>
             var colour = ["purple", "blue", "green"];
             var i = 0;
             document.getElementByID("traffic_light").style.background = colour[i];
+        </script>
+  
 
             function colour_change() {
                 i++;
@@ -43,3 +40,4 @@
             };
         </script>
     </body>
+</html>
